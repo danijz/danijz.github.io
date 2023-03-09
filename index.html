@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Laura Rodriguez</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>CURRICULUM VITAE</h1>
+        <h2>C.P.N. Laura Rodriguez</h2>
+        <p></p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#Tformacion">Formación Académica</a></li>
+            <li><a href="#Texperiencia">Experiencia Laboral</a></li>
+            <li><a href="#Tidiomas">Idiomas</a></li>
+            <li><a href="#Tcursos">Cursos</a></li>
+            <li><a href="#Tcontacto">Contacto</a></li>
+         </ul>
+    </nav>
+
+
+
+<div class="contenido">
+    <div class="articulos">
+        <div class="secciones">
+            <div>
+                <h3>Sobre mí</h3>
+                
+                <p><b>Bienvenido a mi Curriculum Vitae.</b></P> 
+                <P><b><i>Mi nombre es Laura, soy Contadora Pública Nacional, egresada de la Universidad Nacional de Tucumán.</i></b></p> 
+                <p><b><i>Poseo 10 años de experiencia en elaboración de informes anuales, presentación de balances generales y preparación de estados financieros.</i></b></p> 
+                
+                <br>
+                <p style="color: grey;">🖨️Si desea imprimir esta página, por favor haga click en el botón de abajo.</p>
+                <button onclick="window.print()">Imprimir</button>
+                <p></p>
+                <br>
+                <p style="color: grey;">📞Si desea conctactarme para una entrevista de trabajo, por favor deje su número de teléfono y lo llamaré:</p>
+
+                <input id="numb">
+
+                <button type="button" onclick="myFunction()">Enviar número de teléfono</button>
+
+                <p id="cel"></p>
+
+                <script>
+                function myFunction() {
+  
+                let x = document.getElementById("numb").value;
+  
+                 let text;
+                if (isNaN(x) || x < 1000 || x > 9999999999999999) {
+                 text = "Número inválido, por favor colocar número sin 0 ni 15";
+                } else {
+                text = "Enviado correctamente.";
+                 }
+                 document.getElementById("cel").innerHTML = text;
+                }
+                </script>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div class="menusecundario">
+        <div><img src="fotocv.jpg"></div>
+    </div>
+</div>
+
+<hr size="8px" color="black" />
+
+    <main>
+        <section id="formacion" class="tema">
+            <article id="Tformacion" class="titulo">
+                <h4>Formación Académica</h4>
+              </article>
+                <article class="datos">
+                
+                 <ul>  
+                 
+                        <li><p><span class="resaltar">Contador Público Nacional</span></p></li> 
+                        <p>Universidad Nacional de Tucumán</p>
+                        <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver título</a></p>
+                        <br>
+                        <li><p><span class="resaltar">Profesorado de Ciencias Económicas</span></p></li> 
+                        <p>Universidad Nacional de Tucumán</p>
+                        <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver título</a></p>
+                        <br>
+                        <li><p><span class="resaltar">Especialización en Tributación</span></p></li> 
+                        <p>Universidad Nacional de Tucumán</p>
+                        <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver título</a></p>
+                        <br>
+                        <li><p><span class="resaltar">Especialización en Auditoría y Contabilidad</span></p></li> 
+                        <p>Universidad del Norte Santo Tomás de Aquino</p>
+                        <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver título</a></p>
+                 
+                </ul>
+                
+
+            </article>
+        </section>
+
+        <section id="experiencia" class="tema">
+            <article id="Texperiencia" class="titulo">
+                <h4>Experiencia Laboral</h4>
+                <ul class="datos">
+                    <li><p><span class="resaltar">Contable</span></p> </li>
+                    <p><span class="resaltar1">Estudio Contable Picon</span></p>
+                    <p>Documentación de informes financieros para los clientes</p>
+                    <p>Registro completo de ingresos y egresos</p>
+                    <p>Elaboración de declaraciones de impuestos e identificación de las potenciales reducciones y deducibles tributarios</p>
+                    <p>&#x260f <a href="tel:+0101010101">Teléfono de referencia</a></p>
+                    <p></p>
+                    <br>
+                    <li><p><span class="resaltar">Contable</span></p></li> 
+                    <p><span class="resaltar1">Clinica Mayo</span></p>
+                    <p>Registro de transacciones en diarios, libros contables y otros registros</p>
+                    <p>Cumplimiento de las obligaciones fiscales relevantes</p>
+                    <p>Gestion de sistemas de nóminas de la empresa</p>
+                    <p>&#x260f <a href="tel:+0101010101">Teléfono de referencia</a></p>
+                    <p></p>
+                    <br>
+                    <li><p><span class="resaltar">Administrativa Contable</span></p></li>
+                    <p><span class="resaltar1">Grupo Hola</span></p>
+                    <p>Supervisión de las cuentas para comprobar que los pagos estén actualizados</p>
+                    <p>Cobros y pagos de clientes, agencias, proveedores y acreedores</p>
+                    <p>Identificación de incidencias y clarificación de cualquier artículo o importe de factura mensual</p>
+                    <p>&#x260f <a href="tel:+0101010101">Teléfono de referencia</a></p>
+                    <p></p>
+                </ul>
+            </article>
+        </section>
+
+        <section id="idioma" class="tema">
+            <article id="Tidiomas" class="titulo">
+                <i class="fa-solid fa-graduation-cap iconoTitulo"></i>
+                <h4>Idiomas</h4>
+                </article>
+                 <article class="datos">
+                <ul>
+                    <li>
+                        <p><span class="resaltar">Español:</span></p>
+                        <p>Lengua materna</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><span class="resaltar">Portugués:</span></p>
+                        <p>Lengua materna</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p><span class="resaltar">Inglés:</span></p>
+                        <p>Nivel avanzado</p>
+                        <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver certificado</a></p>
+                    <br>
+                    </li>
+                    <li>
+                        <p><span class="resaltar">Francés:</span></p>
+                        <p>Nivel avanzado</p>
+                        <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver certificado</a></p>
+                    <br>
+                    </li>
+                </ul>
+        </section>
+        
+        <section id="cursos" class="tema">
+                    <article id="Tcursos" class="titulo">
+                        <i class="fa-solid fa-graduation-cap iconoTitulo"></i>
+                        <h4>Cursos</h4>
+                        
+                    </article>
+                    <article class="datos">
+                        <ul>
+                            <li>
+                                <p><span class="resaltar">Curso Operador de PC</span></p>
+                                <p>Universidad Tecnológica Nacional</p>
+                                <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver certificado</a></p>
+                            </li>
+                            <br>
+                            <li>
+                                <p><span class="resaltar">Curso de Paquete Office</span></p>
+                                <p>Universidad Tecnológica Nacional</p>
+                                <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver certificado</a></p>
+                            </li>
+                            <br>
+                            <li>
+                                <p><span class="resaltar">Curso de Excel Avanzado</span></p>
+                                <p>Universidad Tecnológica Nacional</p>
+                                <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver certificado</a></p>
+                            <br>
+                            </li>
+                            <li>
+                                <p><span class="resaltar">Clinica del contador</span></p>
+                                <p>Universidad del Norte Santo Tomás de Aquino</p>
+                                <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver certificado</a></p>
+                            <br>
+                            </li>
+                            <li>
+                                <p><span class="resaltar">Curso de Tango Gestión</span></p>
+                                <p>Universidad del Norte Santo Tomás de Aquino</p>
+                                <p>&#x1F4DD<a href="https://drive.google.com/file/d/1fM4YmPzZcVuPzZgdx4Jysi6_w7abUlsh/view?usp=share_link">Ver certificado</a></p>
+                            <br>
+                            </li>
+                        </ul>
+                
+                    </article>
+            </article>
+        </section>
+
+        <section id="contacto" class="tema">
+            <article id="Tcontacto" class="titulo"></article>
+                    
+                <h4>Contacto</h4>
+                    <article>
+                   
+                     <article>
+                    <form id="formularioContacto">
+                    <label for="nombreCont">Nombre:</label>
+                    <input type="text" name="nombreCont" id="nombreCont" class="cajaFormulario" required placeholder="Nombre"><br>
+
+                    <label for="apellidoCont">Apellido:</label>
+                    <input type="text" name="apellidoCont" id="apellidoCont" class="cajaFormulario" required placeholder="Apellido"><br>
+
+                    <label for="correoElecCont">E-Mail</label>
+                    <input type="email" name="correoElecCont" id="correoElecCont" class="cajaFormulario" required placeholder="mail@mail.com"><br>
+
+                    <label for="asuntoCont">Motivo del Mensaje:</label>
+                    <input type="text" name="asuntoCont" id="asuntoCont" class="cajaFormulario" required placeholder="Motivo"><br>
+
+                    <textarea name="comentariosCont" id="comentariosCont" class="cajaFormulario" cols="150" rows="10" placeholder="Escriba su mensaje"></textarea><br>
+                    <input type="submit" id="enviarFormulario" class="cajaFormulario" name="Enviar" value="Enviar">
+                     </form> 
+                                    
+            </article>
+  
+        </section>
+
+
+    </main>
+
+    <footer> 
+        
+        <p>**** Proyecto Final - Argentina Hace 4.0 ****</p>
+    </footer>
+</body>
+</html>
